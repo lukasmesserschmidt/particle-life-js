@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>PL</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Particle Life</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <canvas id="canvas"></canvas>
-    <div id="controlpanel">
+
+    <section id="controlpanel">
+      <!-- buttons -->
       <button id="restart" class="button">Restart</button>
       <button id="random-relations" class="button">Random Relations</button>
       <button id="random-colors" class="button">Random Colors</button>
+
+      <!-- sliders -->
       <div class="container">
         <input
           id="particle-count-range"
@@ -20,6 +26,7 @@
         />
         <h2 id="particle-count-text"></h2>
       </div>
+
       <div class="container">
         <input
           id="group-count-range"
@@ -30,6 +37,7 @@
         />
         <h2 id="group-count-text"></h2>
       </div>
+
       <div class="container">
         <input
           id="relation-scale-range"
@@ -40,6 +48,7 @@
         />
         <h2 id="relation-scale-text">Relation</h2>
       </div>
+
       <div class="container">
         <input
           id="cohesion-range"
@@ -50,6 +59,7 @@
         />
         <h2 id="cohesion-text">Cohesion</h2>
       </div>
+
       <div class="container">
         <input
           id="friction-range"
@@ -60,11 +70,14 @@
         />
         <h2 id="friction-text">Friction</h2>
       </div>
+
       <div class="container">
         <input id="range-range" type="range" min="0" max="2000" value="250" />
         <h2 id="range-text">Range</h2>
       </div>
-    </div>
+    </section>
+
+    <!-- script -->
     <script type="module" src="script/main.js"></script>
   </body>
 </html>
